@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dutyFragment">
+
+    <fragment
+        android:id="@+id/dutyFragment"
+        android:name="com.github.null31337.dutyscheduler.view.DutyFragment"
+        android:label="DutyFragment" >
+        <action
+            android:id="@+id/action_dutyFragment_to_dutyAddFragment"
+            app:destination="@id/dutyAddFragment" />
+        <action
+            android:id="@+id/action_dutyFragment_to_dutyLoginFragment"
+            app:destination="@id/dutyLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dutyAddFragment"
+        android:name="com.github.null31337.dutyscheduler.view.DutyAddFragment"
+        android:label="DutyAddFragment" />
+    <fragment
+        android:id="@+id/dutyLoginFragment"
+        android:name="com.github.null31337.dutyscheduler.view.DutyLoginFragment"
+        android:label="DutyLoginFragment" />
+</navigation>
